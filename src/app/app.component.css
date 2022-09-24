@@ -1,14 +1,31 @@
-.botones {
-  margin: 2px 30px;
+.baner {
+  background-image: url(/src/assets/dist/); padding-top: 30px; padding-bottom: 30px;
+  background-size:cover;
 }
-.secciones .botones{
-  width: 15vw;
+.miFoto {
+  z-index: 9;
+  position:relative;
+  margin-top: -10rem;
+  width: 18vw;
+  height: 35vh;
+  border: solid 4px #864879;
+  border-radius: 50%;
 }
-footer {
-  height: 10vh;
-  background-color: #1F1D36;
-  margin-top: -5px;
-  padding-top: 5px;
-  text-align: center;
-  color: #6c757d;
+.about {
+  display: flex;
+  background-color: #1f1d36;
+  font-family: 'Concert One', cursive;
+  font-size: 15px;
+
 }
+.sobreMi {
+  padding: 3vh 2vh;
+  width: 95%;
+  border: solid 3px #864879;
+  color:#6c757d;
+  margin: 2vh 3vh;
+  font-family: 'Indie Flower', cursive;
+  font-size: 2.5vh;
+
+}
+

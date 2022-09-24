@@ -1,0 +1,76 @@
+.barraSup {
+  background-color: #1F1D36;
+  
+}
+.botones {
+  margin: .5vh 1vw;
+  width: 7vw;
+}
+.secciones .botones{
+  width: 15vw;
+}
+.baner,.seccion{
+  background-image: url(src/assets/dist/fondocodigo.jpg); padding-top: 30px; padding-bottom: 30px;
+  background-size:cover;
+}
+.miFoto {
+  z-index: 9;
+  position:relative;
+  margin-top: -10rem;
+  width: 18vw;
+  height: 35vh;
+  border: solid 4px #864879;
+  border-radius: 50%;
+}
+.about {
+  display: flex;
+  background-color: #1f1d36;
+  font-family: 'Concert One', cursive;
+  font-size: 15px;
+
+}
+.sobreMi {
+  padding: 3vh 2vh;
+  width: 95%;
+  border: solid 3px #864879;
+  color:#6c757d;
+  margin: 2vh 3vh;
+  font-family: 'Indie Flower', cursive;
+  font-size: 2.5vh;
+}
+.navbar {
+  background-color: #452043;
+  color: #864879;
+  font-family: 'Concert One', cursive;
+  display: flex;
+}
+h2 {
+  float: right;
+  margin: 1px 10px;
+}
+.cuerpo.card{
+  background-color: #452043;
+  border: solid 2px #6c757d;
+  border-radius: 10px;
+  margin: 20px 15px;
+  padding-top: 10px;
+  font-family: 'Concert One', cursive;
+  color: #864879
+}
+.lista, .parrafo {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.5rem;
+  color:#6c757d;
+}
+
+
+
+
+footer {
+  height: 5vh;
+  background-color: #864879;
+  margin-top: -5px;
+  padding-top: 5px;
+  text-align: center;
+  color: #1f1d36;
+}
