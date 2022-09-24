@@ -1,0 +1,153 @@
+.seccion{
+  background-image: url(../../../assets/dist/fondocodigo.jpg); padding-top: 30px; padding-bottom: 30px;
+  background-size:cover;
+}
+.navbar {
+  background-color: #452043;
+  color: #864879;
+  font-family: 'Concert One', cursive;
+  display: flex;
+}
+h2 {
+  float: right;
+  margin: 1px 10px;
+}
+.educacion {
+  height: 70vh;
+  background-color: #452043;
+  border: solid 2px #6c757d;
+  border-radius: 10px;
+  margin: 20px 15px;
+  padding-top: 10px;
+  font-family: 'Concert One', cursive;
+  color: #864879;
+  overflow: auto;
+}
+.skills-section {
+  margin-top: 3vh;
+}
+.skills {
+  position: relative;
+  width: 22vh;
+  height: 22vh;
+  margin: 2rem;
+  border-radius: 50%;
+}
+.skills1 {
+  background: linear-gradient(
+    54deg,
+    #1f1d36 50%,
+    #e9a6a6 0%
+  );
+}
+.skills2 {
+  background: linear-gradient(
+    45deg,
+    #1f1d36 50%,
+    #e9a6a6 0%
+  );
+}
+.skills3 {
+  background: linear-gradient(
+    36deg,
+    #1f1d36 50%,
+    #e9a6a6 0%
+  );
+}
+.skills4 {
+  background: linear-gradient(
+    18deg,
+    #1f1d36 50%,
+    #e9a6a6 0%
+  );
+}
+.skills5 {
+  background: linear-gradient(
+    27deg,
+    #1f1d36 50%,
+    #e9a6a6 0%
+  );
+}
+.skills6 {
+  background: linear-gradient(
+    14.4deg,
+    #1f1d36 50%,
+    #e9a6a6 0%
+  );
+}
+
+.skills::before {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22vh;
+  height: 22vh;
+  border-radius: 50%;
+  background: #452043 content-box;
+  padding: 3vh;
+  font-size: 3vh;
+  text-align: center;
+  line-height: 11vh;
+}
+.skills1::before {
+  content: "HTML 5";
+  
+}
+.skills2::before {
+  content: "CSS 4";
+ 
+}
+.skills3::before {
+  content: "JS 5";
+  
+}
+.skills4::before {
+  content: "BOOTSTRAP";
+  
+}
+.skills5::before {
+  content: "TS";
+  
+}
+.skills6::before {
+  content: "ANGULAR";
+ 
+}
+.skills::after {
+  position: absolute;
+  width: 22vh;
+  height: 22vh;
+  border-radius: 50%;
+  background: linear-gradient(
+    transparent 50%,
+    #452043 50%
+  );
+  margin-top: 2px;
+  transform: scale(1.3);
+  text-align: center;
+  line-height: 14rem;
+}
+.skills1::after {
+  content: "30%";
+  
+}
+.skills2::after {
+  content: "25%";
+}
+.skills3::after {
+  content: "20%";
+}
+.skills4::after {
+  content: "5%";
+}
+.skills5::after {
+  content: "15%";
+}
+.skills6::after {
+  content: "7%";
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}

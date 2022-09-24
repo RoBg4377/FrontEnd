@@ -1,0 +1,8 @@
+.botones {
+  border: solid 1px #864879;
+  color: #864879;
+}
+.botones:hover {
+  border: solid 1px #864879;
+  background-color: #864879;
+}

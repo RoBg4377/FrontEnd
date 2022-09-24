@@ -1,0 +1,16 @@
+.redes {
+  color: #864879;
+  font-size: xx-large;
+}
+.redes:hover {
+  cursor: pointer;
+  color: #e9a6a6;
+}
+.botones {
+  border: solid 1px #864879;
+  color: #864879;
+}
+.botones:hover {
+  border: solid 1px #864879;
+  background-color: #864879;
+}
