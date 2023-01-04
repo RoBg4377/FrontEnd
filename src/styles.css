@@ -1,13 +1,16 @@
 .barraSup {
   background-color: #1F1D36;
   
+  
 }
 .botones {
-  margin: .5vh 1vw;
-  width: 7vw;
+  margin: .1vh 1vw;
+  width: 6vw;
+  margin-bottom:50px;
 }
 .secciones .botones{
   width: 15vw;
+  
 }
 .baner,.seccion{
   background-image: url(src/assets/dist/fondocodigo.jpg); padding-top: 30px; padding-bottom: 30px;

@@ -2,15 +2,7 @@
   background-image: url(/src/assets/dist/); padding-top: 30px; padding-bottom: 30px;
   background-size:cover;
 }
-.miFoto {
-  z-index: 9;
-  position:relative;
-  margin-top: -10rem;
-  width: 18vw;
-  height: 35vh;
-  border: solid 4px #864879;
-  border-radius: 50%;
-}
+
 .about {
   display: flex;
   background-color: #1f1d36;
@@ -28,4 +20,6 @@
   font-size: 2.5vh;
 
 }
+
+
 

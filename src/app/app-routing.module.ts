@@ -5,10 +5,12 @@ import { EducacionComponent } from './componentes/educacion/educacion.component'
 import { AboutComponent } from './componentes/about/about.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
+import { InicioComponent } from './componentes/inicio/inicio.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'inicio', pathMatch: 'full'},
-  {path: 'inicio', component: AboutComponent},
+  {path: 'inicio', component: InicioComponent},
+  {path: 'about', component: AboutComponent},
   {path: 'experiencia', component: ExperienciaComponent},
   {path: 'educacion', component: EducacionComponent},
   {path: 'skills', component: SkillsComponent},
