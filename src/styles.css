@@ -1,16 +1,26 @@
+
 .barraSup {
   background-color: #1F1D36;
-  
+  height: 5vw;
   
 }
-.botones {
-  margin: .1vh 1vw;
+.argProg {
+  margin: 0.3vw 1vw;
   width: 6vw;
-  margin-bottom:50px;
 }
-.secciones .botones{
-  width: 15vw;
+.botones{
+  margin: 10px 30px;
+  background-color: #9fcc40;
+  color: #d74e32;
+  border-color: #df8bdd;
+  font-family: 'Concert One', cursive;
+}
+.secciones .botones {
+  width: 10vw;
   
+}
+.btnsup{
+  margin: 0px 15px;
 }
 .baner,.seccion{
   background-image: url(src/assets/dist/fondocodigo.jpg); padding-top: 30px; padding-bottom: 30px;
@@ -65,15 +75,60 @@ h2 {
   font-size: 1.5rem;
   color:#6c757d;
 }
-
-
-
-
 footer {
-  height: 5vh;
+  height: 10vh;
   background-color: #864879;
-  margin-top: -5px;
-  padding-top: 5px;
-  text-align: center;
+  
   color: #1f1d36;
+}
+.pie{
+  width: 20vw;
+  margin: auto;
+}
+.cuerpo{
+  display: inline-flexbox;
+  width: 99.2vw;
+  height: 100vh;
+  background-image: url(src/assets/dist/fondocodigo.jpg);
+  background-size: cover;
+}
+.contenedorA{
+  float: left;
+  margin: 30px;
+  width: 25vw;
+  height: 100vh;
+  
+}
+.logo{
+  margin: 3rem 2rem; 
+  width: 25rem;
+}
+.btnL{
+  width: 7rem;
+  margin: auto;
+}
+.btnLogin{
+  width: 6rem;
+  height: 3rem;
+  
+}
+
+.saludo{
+  background-color: #1f1d36;
+  float: right;
+  font-size: 70px;
+  margin: 40px 120px;
+  padding: 50px 70px;
+}
+.uno{
+  color: #d74e32;
+}
+.dos{
+  color: #df8bdd;
+}
+.tres{
+  color: #9fcc40;
+}
+.etiquetas{
+  padding: 2px;
 }
