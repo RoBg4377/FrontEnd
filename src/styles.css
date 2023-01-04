@@ -29,27 +29,26 @@
 .miFoto {
   z-index: 9;
   position:relative;
-  margin-top: -10rem;
+  margin-top: 8rem;
   width: 18vw;
   height: 35vh;
   border: solid 4px #864879;
   border-radius: 50%;
 }
 .about {
+  height: 80vh;
   display: flex;
-  background-color: #1f1d36;
   font-family: 'Concert One', cursive;
   font-size: 15px;
-
 }
 .sobreMi {
+  background-color: #1f1d36;
   padding: 3vh 2vh;
-  width: 95%;
   border: solid 3px #864879;
   color:#6c757d;
   margin: 2vh 3vh;
   font-family: 'Indie Flower', cursive;
-  font-size: 2.5vh;
+  font-size: 3.5vh;
 }
 .navbar {
   background-color: #452043;
