@@ -85,7 +85,6 @@ footer {
   margin: auto;
 }
 .cuerpo{
-  display: inline-flexbox;
   width: 99.2vw;
   height: 100vh;
   background-image: url(src/assets/dist/fondocodigo.jpg);
@@ -130,4 +129,12 @@ footer {
 }
 .etiquetas{
   padding: 2px;
+}
+.cuerpos{
+  background-color: #1F1D36;
+  width: 80vw;
+  margin: 5vh auto;
+  padding: 3rem;
+  border: #9fcc40 2px solid;
+  border-radius: 15px;
 }
