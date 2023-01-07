@@ -2,7 +2,6 @@
 .barraSup {
   background-color: #1F1D36;
   height: 5vw;
-  
 }
 .argProg {
   margin: 0.3vw 1vw;
@@ -17,7 +16,6 @@
 }
 .secciones .botones {
   width: 10vw;
-  
 }
 .btnsup{
   margin: 0px 15px;
@@ -95,7 +93,6 @@ footer {
   margin: 30px;
   width: 25vw;
   height: 100vh;
-  
 }
 .logo{
   margin: 3rem 2rem; 
@@ -110,7 +107,6 @@ footer {
   height: 3rem;
   
 }
-
 .saludo{
   background-color: #1f1d36;
   float: right;

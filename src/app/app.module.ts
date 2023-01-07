@@ -12,6 +12,11 @@ import { EducacionComponent } from './componentes/educacion/educacion.component'
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
+import { NavComponent } from './componentes/nav/nav.component';
+import { FooterComponent } from './componentes/footer/footer.component';
+import { DashboardComponent } from './componentes/dashboard/dashboard.component';
+import { Pag404Component } from './componentes/pag404/pag404.component';
+
 
 
 @NgModule({
@@ -25,6 +30,11 @@ import { InicioComponent } from './componentes/inicio/inicio.component';
     SkillsComponent,
     ProyectosComponent,
     InicioComponent,
+    NavComponent,
+    FooterComponent,
+    DashboardComponent,
+    Pag404Component,
+
   ],
   imports: [
     BrowserModule,

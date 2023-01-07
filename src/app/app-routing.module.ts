@@ -6,15 +6,19 @@ import { AboutComponent } from './componentes/about/about.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
+import { AppComponent } from './app.component';
+import { DashboardComponent } from './componentes/dashboard/dashboard.component';
+import { Pag404Component } from './componentes/pag404/pag404.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'inicio', pathMatch: 'full'},
-  {path: 'inicio', component: InicioComponent},
+  {path: 'inicio', component: DashboardComponent},
   {path: 'about', component: AboutComponent},
   {path: 'experiencia', component: ExperienciaComponent},
   {path: 'educacion', component: EducacionComponent},
   {path: 'skills', component: SkillsComponent},
-  {path: 'proyectos', component: ProyectosComponent}
+  {path: 'proyectos', component: ProyectosComponent},
+  {path: '**', component: Pag404Component}
 ];
 
 @NgModule({
