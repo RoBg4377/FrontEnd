@@ -14,8 +14,10 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { NavComponent } from './componentes/nav/nav.component';
 import { FooterComponent } from './componentes/footer/footer.component';
-import { DashboardComponent } from './componentes/dashboard/dashboard.component';
 import { Pag404Component } from './componentes/pag404/pag404.component';
+import { DashboardComponent } from './componentes/dashboard/dashboard.component';
+import { IndiceComponent } from './componentes/indice/indice.component';
+
 
 
 
@@ -32,9 +34,9 @@ import { Pag404Component } from './componentes/pag404/pag404.component';
     InicioComponent,
     NavComponent,
     FooterComponent,
-    DashboardComponent,
     Pag404Component,
-
+    DashboardComponent,
+    IndiceComponent,
   ],
   imports: [
     BrowserModule,
