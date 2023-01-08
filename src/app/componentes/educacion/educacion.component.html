@@ -1,47 +1,25 @@
-<app-nav></app-nav>
 <div class="seccion">
   <nav class="navbar container-fluid">
   <div class="container-fluid navbar">
     <span class="navbar-brand">
       <img src="../../../assets/dist/MiLogo.png" alt="logo Rodrigo Benavides" style="width:5rem;">
-     <h2 class="navbar">Educación:</h2>
+      <h2 class="navbar">Educación:</h2>
     </span>
   </div>
 </nav>
 
 <div class="cuerpos">
-  <h5 class="card-header" style="color: #9fcc40;">freCodeCamp Academy</h5>
+  <h5 class="card-header" style="color: #9fcc40;">{{instit}}</h5>
   <div class="card-body">
-    <h5 class="card-title" style="color: #9fcc40;">Algoritmos de JavaScript y Estructuras de Datos</h5>
-    <ul class="card-text">
-      <li class="lista">JavaScript básico</li>
-      <li class="lista">ES6</li>
-      <li class="lista">Expresiones regulares</li>
-      <li class="lista">Depuración</li>
-      <li class="lista">Estructuras de datos básicas</li>
-      <li class="lista">Programación de algoritmos básicos</li>
-      <li class="lista">Programación orientada a objetos</li>
-      <li class="lista">Programación funcional</li>
+    <h5 class="card-title" style="color: #9fcc40;">{{nomCurso}}</h5>
+    <br>
+    <ul class="card-text" *ngFor ="let tema of temas">
+      <li class="lista">{{tema}}</li>
     </ul>
+    <br>
     <a href="https://www.freecodecamp.org" target="_blank" class="btn btn-outline-secondary" style="color: #9fcc40; border: #9fcc40 1px solid;">Ir al sitio</a>
   </div>
 </div>
-<div class="cuerpos">
-  <h5 class="card-header" style="color: #9fcc40;">The Odin Project</h5>
-  <div class="card-body">
-    <h5 class="card-title" style="color: #9fcc40;">Fundations</h5>
-    <ul class="card-text">
-      <li class="lista">Introduction</li>
-      <li class="lista">Prerequisites</li>
-      <li class="lista">Git Basics</li>
-      <li class="lista">HTML Foundations</li>
-      <li class="lista">CSS Foundations</li>
-      <li class="lista">Flexbox</li>
-    </ul>
-    <a href="https://www.theodinproject.com/paths/foundations/courses/foundations#git-basics" class="btn btn-outline-secondary" style="color: #9fcc40; border: #9fcc40 1px solid;">Ir al Sitio</a>
-  </div>
-</div>
-<app-footer></app-footer>
 
 
 

@@ -22,43 +22,43 @@
 .skills1 {
   background: linear-gradient(
     54deg,
-    #1f1d36 50%,
-    #e9a6a6 0%
+    #9fcc40 50%,
+    #d74e32 0%
   );
 }
 .skills2 {
   background: linear-gradient(
     45deg,
-    #1f1d36 50%,
-    #e9a6a6 0%
+    #9fcc40 50%,
+    #d74e32 0%
   );
 }
 .skills3 {
   background: linear-gradient(
     36deg,
-    #1f1d36 50%,
-    #e9a6a6 0%
+    #9fcc40 50%,
+    #d74e32 0%
   );
 }
 .skills4 {
   background: linear-gradient(
     18deg,
-    #1f1d36 50%,
-    #e9a6a6 0%
+    #9fcc40 50%,
+    #d74e32 0%
   );
 }
 .skills5 {
   background: linear-gradient(
     27deg,
-    #1f1d36 50%,
-    #e9a6a6 0%
+    #9fcc40 50%,
+    #d74e32 0%
   );
 }
 .skills6 {
   background: linear-gradient(
     14.4deg,
-    #1f1d36 50%,
-    #e9a6a6 0%
+    #9fcc40 50%,
+    #d74e32 0%
   );
 }
 
@@ -136,4 +136,18 @@
 a {
   text-decoration: none;
   color: #fff;
+}
+.html{
+  width: 3vw;
+  z-index: 999;
+  position: absolute;
+  top: 8vw;
+  left: 11.5vw;
+}
+.css{
+  width:3.3vw;
+  z-index: 999;
+  position: absolute;
+  top: 18rem;
+  left: 39.5rem;
 }
