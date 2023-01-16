@@ -10,9 +10,14 @@
 .botones{
   margin: 10px 30px;
   background-color: #9fcc40;
-  color: #d74e32;
+  color: #1f1d36;
   border-color: #df8bdd;
   font-family: 'Concert One', cursive;
+}
+.botones:hover{
+  background-color: #1F1D36;
+  color: #9fcc40;
+  border-color:#9fcc40;
 }
 .secciones .botones {
   width: 10vw;

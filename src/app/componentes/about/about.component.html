@@ -3,7 +3,7 @@
   <div class="container-fluid navbar">
     <span class="navbar-brand">
       <img src="../../../assets/dist/MiLogo.png" alt="logo Rodrigo Benavides" style="width:5rem;">
-     <h2 class="navbar">Acerca de mí:</h2>
+    <h2 class="navbar">Acerca de mí:</h2>
     </span>
   </div>
 <div class="container-fluid baner">
@@ -11,19 +11,18 @@
   <div class="row">
 
     <div class="col-3 about">
-      <img class="miFoto" src="../../../assets/dist/foto.png" alt="">
+      <img class="miFoto" [src]="portfolioDatos.foto" alt="">
     </div>
 
       <div class="container-fluid sobreMi col-8 cuerpos">
+        <p class="presentacion" ><strong>{{portfolioDatos.nombre}} {{portfolioDatos.apellido}} </strong> <u>{{portfolioDatos.titulo}}</u></p>
+        <br>
+        <p>{{portfolioDatos.presentacion}}</p>
       
-      <h3><u>Desarrollador Web Full Satck</u> </h3>
-      <p>Soy Rodrigo, desarrollador web. Curioso por naturaleza y apasionado por la tecnología y el funcionamiento de las cosas. Esta características me han llevado por diferentes experiencias de aprendizaje en los rubros más disímiles. Conocí la computación ya de grande, y me enamoré de lo que se podía lograr con ella. Así primero, aprendí (de forma autodidacta) el mantenimiento y armado de la P. C.,  luego, cuando tuve la oportunidad de entrar a “argentina programa” descubrí mi pasión más reciente: La Programación  Web.</p>
-      <p>He aquí mis trabajos, mis avances, mi camino. Espero pronto, caminar con ustedes.</p>
-      <h2><strong>Rodrigo Benavides</strong></h2>
       </div>
       
     
   </div>
   
 </div>
-
+<!-- ./../../../assets/dist/foto.png -->

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServicioDatosPorfolioService } from 'src/app/servicios/servicio-datos-porfolio.service';
 
 @Component({
   selector: 'app-educacion',
@@ -7,19 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EducacionComponent implements OnInit {
 
-  instit: string = 'FreeCodeCamp Academy';
-  nomCurso: string = 'Algortimos de JavaScript y Estructura de datos';
-  temas: String[] = [
-    'JavaScript básico',
-    'ES6',
-    'Expresiones regulares',
-    'Depuración',
-    'Estructuras de datos básicas',
-  ];
+  educacionDatos: any;
 
-  constructor() { }
+  constructor(private datosPortfolio : ServicioDatosPorfolioService) { }
 
   ngOnInit(): void {
+    this.datosPortfolio.obtenerDatos().subscribe(data =>{
+      console.log(data)
+      this.educacionDatos = data.educacion;
+    })
   }
 
 }

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,7 +17,8 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { Pag404Component } from './componentes/pag404/pag404.component';
 import { DashboardComponent } from './componentes/dashboard/dashboard.component';
 import { IndiceComponent } from './componentes/indice/indice.component';
-
+import { AcercaDeMiComponent } from './modales/acerca-de-mi/acerca-de-mi.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 
@@ -37,11 +38,15 @@ import { IndiceComponent } from './componentes/indice/indice.component';
     Pag404Component,
     DashboardComponent,
     IndiceComponent,
+    AcercaDeMiComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

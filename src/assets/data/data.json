@@ -1,0 +1,44 @@
+{
+  "nombre" : "Rodrigo",
+  "apellido" : "Benavides",
+  "titulo" : "Desarrollador Web Full Stack",
+  "presentacion" : "Hola! Amo la tecnología. ¿vos tambien? , podríamos trabajar juntos. Y si buscasa alguien que te resuelva un problema con respecto a una aplicación web... yo soy ese hombre.",
+  "foto" : "./../../../assets/dist/foto.png ",
+  "educacion" : [{
+      "academia" : "FreeCodecamp",
+      "curso" : "Algoritmos de JavaScript y Estructuras de Datos",
+      "temas" : [
+        "JavaScript básico",
+        "ES6",
+        "Expresiones regulares",
+        "Programación de algoritmos básicos"
+      ],
+      "año" : 2022
+    },
+    {
+      "academia" : "Pildoras Informáticas",
+      "curso" : "Java y Angular",
+      "temas" : [
+        "Estructuras principales Java",
+        "Manipulación de cadenas",
+        "Estructura y flujo angular",
+        "Data binding"
+      ],
+      "año" : 2022
+    },
+    {
+      "academia" : "Argentina Programa",
+      "curso" : "#YoProgramo",
+      "temas" : [
+        "Introducción a Desarrollo Web y Aplicaciones",
+        "Desarrollo Front End Estático",
+        "Desarrollo Front End Dinámico",
+        "Bases de datos"
+      ],
+      "año" : 2022
+    }
+    
+  ]
+    
+  
+}

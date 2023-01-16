@@ -1,0 +1,16 @@
+.campo{
+  background-color: #1f1d36;
+}
+.editar{
+  color: #9fcc40;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: #9fcc40 solid 1px;
+}
+.editar:hover {
+  color: #d74e32;
+  border: #d74e32 solid 1px;
+  transform: scale(1.1);
+}
