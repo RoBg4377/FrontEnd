@@ -3,18 +3,21 @@
   <div class="container-fluid navbar">
     <span class="navbar-brand">
       <img src="../../../assets/dist/MiLogo.png" alt="logo Rodrigo Benavides" style="width:5rem;">
-     <h2 class="navbar">Experiencia:</h2>
+      <h2 class="navbar">Experiencia:</h2>
     </span>
   </div>
 </nav>
 
-<div class="cuerpos">
-  <h5 class="card-header" style="color: #9fcc40;">{{fechaPractica}}</h5>
+<div class="cuerpos" *ngFor="let experiencia of experiencias">
+  <h5 class="card-header" style="color: #9fcc40;">{{experiencia.fechaIni}} al {{experiencia.fechaFin}}</h5>
   <div class="card-body">
-    <h5 class="card-title" style="color: #9fcc40;" >{{tituloPractica}}</h5>
-    <p class="card-text parrafo">{{descripcionPractica}}</p>
+    <h5 class="card-title" style="color: #9fcc40;" >{{experiencia.compania}}</h5>
+    <h4 style="color: #9fcc40;">{{experiencia.puesto}}</h4>
+    <p class="card-text parrafo">{{experiencia.tarea}}</p>
     
-    <a href="{{repositorioPractica}}" target="_blank" class="btn btn-outline-secondary" style="color: #9fcc40; border: #9fcc40 1px solid;">Ver tarbajo</a>
+    <div class="text-center">
+      <img src="{{experiencia.img}}" cclass="img-thumbnail" alt="..." style="width: 50vh;">
+    </div>
   </div>
 </div>
 

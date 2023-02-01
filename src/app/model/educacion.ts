@@ -15,20 +15,6 @@ export class Educacion {
     this.fecha = fecha;
     this.enlace = enlace;
 }
-  // public getAcademia(): String {
-  //   return this.academia;
-  // }
-  // public getCurso(): String {
-  //   return this.curso;
-  // }
-  // public getTemas(): String {
-  //   return this.temas;
-  // }
-  // public getFecha(): String {
-  //   return this.fecha;
-  // }
-  // public getEnlace(): String {
-  //   return this.enlace;
-  // }
+
 
 }
