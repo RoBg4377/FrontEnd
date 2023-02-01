@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormContactoComponent implements OnInit {
 
+  mail: boolean = false;
+  whatsapp : boolean = false;
+
+  mostrarMail(){
+    this.mail = !this.mail;
+  }
+  mostrarWhats(){
+    this.whatsapp = !this.whatsapp;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

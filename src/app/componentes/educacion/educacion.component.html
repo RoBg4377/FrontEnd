@@ -8,17 +8,19 @@
   </div>
 </nav>
 
-<div class="cuerpos" *ngFor="let edu of educacionDatos">
+<div class="cuerpos" *ngFor="let educacion of educaciones">
   
-  <h5 class="card-header" style="color: #9fcc40;">{{edu.academia}}</h5>
+  
+  <h5 class="card-header" style="color: #9fcc40;">{{educacion.academia}}</h5>
   <div class="card-body">
-    <h5 class="card-title" style="color: #9fcc40;">{{edu.curso}}</h5>
+    <h5 class="card-title" style="color: #9fcc40;">{{educacion.curso}}</h5>
     <br>
-    <ul class="card-text" >
-      <li class="lista" *ngFor="let tema of edu.temas">{{tema}}</li>
+    <ul class="card-text" *ngFor="let tema of ((educacion.temas).split(','))">
+      <li class="lista" >{{tema}}</li>
     </ul>
     <br>
-    <a href="https://www.freecodecamp.org" target="_blank" class="btn btn-outline-secondary" style="color: #9fcc40; border: #9fcc40 1px solid;">Ir al sitio</a>
+    <p style="color: #9fcc40;">{{educacion.fecha}}</p>
+    <a href="{{educacion.enlace}}" target="_blank" class="btn btn-outline-secondary" style="color: #9fcc40; border: #9fcc40 1px solid;">Ir al sitio</a>
   </div>
 </div>
 

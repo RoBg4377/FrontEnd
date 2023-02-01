@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormContactoComponent } from './componentes/form-contacto/form-contacto.component';
 import { FormLoginComponent } from './componentes/form-login/form-login.component';
-import { AboutComponent } from './componentes/about/about.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
@@ -15,10 +14,13 @@ import { InicioComponent } from './componentes/inicio/inicio.component';
 import { NavComponent } from './componentes/nav/nav.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { Pag404Component } from './componentes/pag404/pag404.component';
-import { DashboardComponent } from './componentes/dashboard/dashboard.component';
+
 import { IndiceComponent } from './componentes/indice/indice.component';
 import { AcercaDeMiComponent } from './modales/acerca-de-mi/acerca-de-mi.component';
 import {HttpClientModule} from '@angular/common/http';
+import { PersonaComponent } from './componentes/persona/persona.component';
+
+
 
 
 
@@ -27,7 +29,6 @@ import {HttpClientModule} from '@angular/common/http';
     AppComponent,
     FormContactoComponent,
     FormLoginComponent,
-    AboutComponent,
     ExperienciaComponent,
     EducacionComponent,
     SkillsComponent,
@@ -36,9 +37,11 @@ import {HttpClientModule} from '@angular/common/http';
     NavComponent,
     FooterComponent,
     Pag404Component,
-    DashboardComponent,
+
     IndiceComponent,
     AcercaDeMiComponent,
+    PersonaComponent,
+  
   ],
   imports: [
     BrowserModule,

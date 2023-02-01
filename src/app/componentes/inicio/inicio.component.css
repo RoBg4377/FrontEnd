@@ -1,0 +1,12 @@
+.botones{
+  background-color: #9fcc40;
+  color: #1f1d36;
+  border-color: #df8bdd;
+  font-family: 'Concert One', cursive;
+  margin: 1vw;
+}
+.botones:hover{
+  background-color: #1F1D36;
+  color: #9fcc40;
+  border-color:#9fcc40;
+}

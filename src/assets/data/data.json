@@ -7,12 +7,7 @@
   "educacion" : [{
       "academia" : "FreeCodecamp",
       "curso" : "Algoritmos de JavaScript y Estructuras de Datos",
-      "temas" : [
-        "JavaScript básico",
-        "ES6",
-        "Expresiones regulares",
-        "Programación de algoritmos básicos"
-      ],
+      "temas" : "JvaScript básico,ES6,Expresiones regulares,Programación de algoritmos básicos",
       "año" : 2022
     },
     {
@@ -36,9 +31,9 @@
         "Bases de datos"
       ],
       "año" : 2022
-    }
+    }]
     
-  ]
+
     
   
 }

@@ -1,3 +1,4 @@
+<p>persona works!</p>
 <div class="seccion">
   <nav class="navbar container-fluid">
   <div class="container-fluid navbar">
@@ -11,18 +12,15 @@
   <div class="row">
 
     <div class="col-3 about">
-      <img class="miFoto" [src]="portfolioDatos.foto" alt="">
+      <img class="miFoto" src="{{persona.foto}}" alt="">
     </div>
 
       <div class="container-fluid sobreMi col-8 cuerpos">
-        <p class="presentacion" ><strong>{{portfolioDatos.nombre}} {{portfolioDatos.apellido}} </strong> <u>{{portfolioDatos.titulo}}</u></p>
+        <p class="presentacion" ><strong>{{persona.nombre}} {{persona.apellido}} </strong> <u>{{persona.titulo}}</u></p>
         <br>
-        <p>{{portfolioDatos.presentacion}}</p>
+        <p>{{persona.descripcion}}</p>
       
       </div>
       
     
   </div>
-  
-</div>
-<!-- ./../../../assets/dist/foto.png -->
