@@ -10,6 +10,8 @@ import { EduacacionService } from 'src/app/servicios/eduacacion.service';
 })
 export class EducacionComponent implements OnInit {
 
+  logeado: boolean = true;
+
   educaciones : Educacion[];
 
   constructor(public educacionService : EduacacionService) { }

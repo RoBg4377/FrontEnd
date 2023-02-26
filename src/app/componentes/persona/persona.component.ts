@@ -8,8 +8,11 @@ import { PersonaService } from 'src/app/servicios/persona.service';
   styleUrls: ['./persona.component.css']
 })
 export class PersonaComponent implements OnInit {
+
   
   persona: Persona = new Persona('', '', '', '', '');
+
+  logeado: boolean = true;
 
   constructor(public personaService : PersonaService) { }
 

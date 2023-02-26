@@ -9,6 +9,7 @@ import { Pag404Component } from './componentes/pag404/pag404.component';
 import { IndiceComponent } from './componentes/indice/indice.component';
 
 import { PersonaComponent } from './componentes/persona/persona.component';
+import { DashboardComponent } from './componentes/dashboard/dashboard.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'indice', pathMatch: 'full'},
@@ -18,7 +19,7 @@ const routes: Routes = [
   {path: 'educacion', component: EducacionComponent},
   {path: 'skills', component: SkillsComponent},
   {path: 'proyectos', component: ProyectosComponent},
-  
+  {path: 'dashboard', component: DashboardComponent},
   {path: '**', component: Pag404Component}
 ];
 

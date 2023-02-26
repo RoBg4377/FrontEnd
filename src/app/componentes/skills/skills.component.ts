@@ -9,6 +9,8 @@ import { SkillsService } from 'src/app/servicios/skills.service';
 })
 export class SkillsComponent implements OnInit {
 
+  logeado: boolean = true;
+
   habilidades : Skills[]; 
 
   barra : 58;

@@ -19,6 +19,7 @@ import { IndiceComponent } from './componentes/indice/indice.component';
 import { AcercaDeMiComponent } from './modales/acerca-de-mi/acerca-de-mi.component';
 import {HttpClientModule} from '@angular/common/http';
 import { PersonaComponent } from './componentes/persona/persona.component';
+import { DashboardComponent } from './componentes/dashboard/dashboard.component';
 
 
 
@@ -41,6 +42,7 @@ import { PersonaComponent } from './componentes/persona/persona.component';
     IndiceComponent,
     AcercaDeMiComponent,
     PersonaComponent,
+    DashboardComponent,
   
   ],
   imports: [
