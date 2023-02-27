@@ -104,6 +104,10 @@ footer {
   color: #9fcc40;
   
 }
+.iconos:hover{
+  transform: scale(1.2);
+  
+}
 .botones{
   background-color: #9fcc40;
   color: #1f1d36;
