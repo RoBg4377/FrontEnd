@@ -68,14 +68,14 @@ footer {
 }
 .logo{
   margin: 3rem 2rem; 
-  width: 25rem;
+  width: 15rem;
 }
 
 
 .saludo{
   background-color: #1f1d36;
-  font-size: 4vw;
-  padding: 5vh 8vw;
+  font-size: 3vw;
+  padding: 6vh;
 
 }
 .uno{
@@ -103,4 +103,16 @@ footer {
   margin-top: -5vh;
   color: #9fcc40;
   
+}
+.botones{
+  background-color: #9fcc40;
+  color: #1f1d36;
+  border-color: #df8bdd;
+  font-family: 'Concert One', cursive;
+  margin: 1vw;
+}
+.botones:hover{
+  background-color: #1F1D36;
+  color: #9fcc40;
+  border-color:#9fcc40;
 }

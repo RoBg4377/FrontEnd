@@ -9,11 +9,14 @@ import { ProyectosService } from 'src/app/servicios/proyectos.service';
 })
 export class ProyectosComponent implements OnInit {
 
+  logeado: boolean = true;
+
   proyectos : Proyectos[];
 
   constructor(public proyectoService : ProyectosService) { }
 
   ngOnInit(): Proyectos[] {
+    
     this.proyectoService.proyectosList().subscribe(data => {this.proyectos = data})
     return this.proyectos;
   }

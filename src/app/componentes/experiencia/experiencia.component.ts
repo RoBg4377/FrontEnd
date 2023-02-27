@@ -8,6 +8,8 @@ import { ExperienciaService } from 'src/app/servicios/experiencia.service';
   styleUrls: ['./experiencia.component.css']
 })
 export class ExperienciaComponent implements OnInit {
+  
+  logeado: boolean = true;
 
   experiencias : Experiencia[];
 

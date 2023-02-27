@@ -20,6 +20,7 @@ import { AcercaDeMiComponent } from './modales/acerca-de-mi/acerca-de-mi.compone
 import {HttpClientModule} from '@angular/common/http';
 import { PersonaComponent } from './componentes/persona/persona.component';
 import { DashboardComponent } from './componentes/dashboard/dashboard.component';
+import { FormRegisterComponent } from './form-register/form-register.component';
 
 
 
@@ -43,15 +44,15 @@ import { DashboardComponent } from './componentes/dashboard/dashboard.component'
     AcercaDeMiComponent,
     PersonaComponent,
     DashboardComponent,
+    FormRegisterComponent,
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
-    ReactiveFormsModule
-    
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

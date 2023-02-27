@@ -9,8 +9,9 @@
         <button type="button" class=" btn botones" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style=" font-family: 'Concert One', cursive;">CONTACTO</button>
       
       
-        <button type="button" class=" btn botones" data-bs-toggle="collapse" data-bs-target="#secciones" aria-expanded="false" aria-controls="secciones" style=" font-family: 'Concert One', cursive;">SECCIONES</button>
-      
+        <button *ngIf="isLogged" type="button" class=" btn botones" data-bs-toggle="collapse" data-bs-target="#secciones" aria-expanded="false" aria-controls="secciones" style=" font-family: 'Concert One', cursive;">SECCIONES</button>
+        <button *ngIf="isLogged" type="button" class=" btn botones" style=" font-family: 'Concert One', cursive;" (click)="onlogOut()"><i class="bi bi-box-arrow-left"></i> </button>
+
     </div> 
   </div>
 </nav>

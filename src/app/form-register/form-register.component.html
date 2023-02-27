@@ -1,0 +1,41 @@
+<div class="modal fade" id="registro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="border: solid 2px #9fcc40;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form #f="ngForm" (ngSubmit)="onRegister()" novalidate>
+          <div class="mb-3 form-group">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="textlHelp"
+              [(ngModel)]="nombre" required>
+          </div>
+          <div class="mb-3 form-group">
+            <label for="nombreUsuario" class="form-label">Nombre de Usuario</label>
+            <input type="text" class="form-control" id="nombreUsuario" name="nombreUsuario" aria-describedby="textlHelp"
+              [(ngModel)]="nombreUsuario" required>
+          </div>
+          <div class="mb-3 form-group">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="password" name="password" [(ngModel)]="password" required>
+          </div>
+          <div class="mb-3 form-group">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" name="email" aria-describedby="textlHelp"
+              [(ngModel)]="email" required>
+          </div>
+          <div class="form-group d-grid gap-2">
+            <button type="submit" class="btn btn-outline-success " [disabled]="!f.valid">Crear Cuenta</button>
+          </div>
+
+
+        </form>>
+        <div class="alert alert-danger mt-3" *ngIf="f.submitted && isRegisterFail">
+          Fail en el login : {{errMsj? null: "No autorizado"}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
