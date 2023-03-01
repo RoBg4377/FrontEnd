@@ -1,0 +1,41 @@
+<div class="modal fade" id="persona" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="border: solid 2px #9fcc40;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Acerca de mi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <p>{{nombre}}</p>
+          <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" value="nombre"  [(ngModel)]="nombre" name="zapato">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Apellido:</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="apellido">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Título</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="titulo">
+        </div>
+      
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Presentación:</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="prese"></textarea>
+        </div>
+      
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">foto</label>
+          <input type="url" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="foto">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn botones" (click)="grabar()">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

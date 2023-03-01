@@ -1,31 +1,38 @@
-<p>persona works!</p>
+<app-nav></app-nav>
 <div class="seccion">
   <nav class="navbar container-fluid">
-  <div class="container-fluid navbar">
-    <span class="navbar-brand">
-      <img src="../../../assets/dist/MiLogo.png" alt="logo Rodrigo Benavides" style="width:5rem;">
-    <h2 class="navbar">Acerca de mí:</h2>
-    </span>
-  </div>
-<div class="container-fluid baner">
-
-  <div class="row">
-
-    <div class="col-3 about">
-      <img class="miFoto" src="{{persona.foto}}" alt="">
+    <div class="container-fluid navbar">
+      <span class="navbar-brand">
+        <img src="../../../assets/dist/MiLogo.png" alt="logo Rodrigo Benavides" style="width:5rem;">
+        <h2 class="navbar">Acerca de mí:</h2>
+      </span>
     </div>
+    <div class="container-fluid baner">
 
-      <div class="container-fluid sobreMi col-8 cuerpos">
-        <div class="iconos" *ngIf="logeado" style="cursor: pointer;">
-          <span routerLink="/formulario_persona"><i class="bi bi-pencil-square"></i></span>
-          
+      <div class="row">
+
+        <div class="col-3 about">
+          <img class="miFoto" src="{{persona.foto}}" alt="">
         </div>
-        
-        <p class="presentacion" ><strong>{{persona.nombre}} {{persona.apellido}} </strong> <u>{{persona.titulo}}</u></p>
-        <br>
-        <p>{{persona.descripcion}}</p>
-      
+
+        <div class="container-fluid sobreMi col-8 cuerpos">
+          <div class="iconos" *ngIf="logeado" style="cursor: pointer;">
+            <span data-bs-toggle="modal" data-bs-target="#persona"><i class="bi bi-pencil-square"></i></span>
+
+          </div>
+
+          <p class="presentacion"><strong>{{persona.nombre}} {{persona.apellido}} </strong> <u>{{persona.titulo}}</u>
+          </p>
+          <br>
+          <p>{{persona.descripcion}}</p>
+
+        </div>
+
+
       </div>
-      
-      
-  </div>
+    </div>
+  </nav>
+</div>
+<app-form-contacto></app-form-contacto>
+<app-footer></app-footer>
+<app-form-about></app-form-about>

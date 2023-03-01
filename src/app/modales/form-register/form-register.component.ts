@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { NuevoUsuario } from '../model/nuevo-usuario';
-import { AuthService } from '../servicios/auth.service';
-import { TokenService } from '../servicios/token.service';
+import { NuevoUsuario } from 'src/app/model/nuevo-usuario';
+import { AuthService } from 'src/app/servicios/auth.service';
+import { TokenService } from 'src/app/servicios/token.service';
+
 
 @Component({
   selector: 'app-form-register',

@@ -6,20 +6,22 @@ import { EducacionComponent } from './componentes/educacion/educacion.component'
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { Pag404Component } from './componentes/pag404/pag404.component';
-import { IndiceComponent } from './componentes/indice/indice.component';
 
 import { PersonaComponent } from './componentes/persona/persona.component';
-import { DashboardComponent } from './componentes/dashboard/dashboard.component';
+import { InicioComponent } from './componentes/inicio/inicio.component';
+import { GuardServiceService as guard } from './guards/guard-service.service';
+
+
 
 const routes: Routes = [
-  {path: '', redirectTo: 'indice', pathMatch: 'full'},
-  {path: 'indice', component: IndiceComponent},
-  {path: 'persona', component: PersonaComponent},
-  {path: 'experiencia', component: ExperienciaComponent},
-  {path: 'educacion', component: EducacionComponent},
-  {path: 'skills', component: SkillsComponent},
-  {path: 'proyectos', component: ProyectosComponent},
-  {path: 'dashboard', component: DashboardComponent},
+  {path: '', redirectTo: 'inicio', pathMatch: 'full'},
+  {path: 'inicio', component: InicioComponent},
+  {path: 'persona', component: PersonaComponent, canActivate: [guard], data: { expectedRol: ['admin', 'user'] }},
+  {path: 'experiencia', component: ExperienciaComponent, canActivate: [guard], data: { expectedRol: ['admin', 'user'] }},
+  {path: 'educacion', component: EducacionComponent, canActivate: [guard], data: { expectedRol: ['admin', 'user'] }},
+  {path: 'skills', component: SkillsComponent, canActivate: [guard], data: { expectedRol: ['admin', 'user'] }},
+  {path: 'proyectos', component: ProyectosComponent,canActivate: [guard], data: { expectedRol: ['admin', 'user'] }},
+  
   {path: '**', component: Pag404Component}
 ];
 

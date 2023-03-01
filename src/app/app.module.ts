@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { interceptorProvider } from './servicios/main-interceptor.service';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormContactoComponent } from './componentes/form-contacto/form-contacto.component';
-import { FormLoginComponent } from './componentes/form-login/form-login.component';
+import { FormContactoComponent } from './modales/form-contacto/form-contacto.component';
+import { FormLoginComponent } from './modales/form-login/form-login.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
@@ -16,11 +18,11 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { Pag404Component } from './componentes/pag404/pag404.component';
 
 import { IndiceComponent } from './componentes/indice/indice.component';
-import { AcercaDeMiComponent } from './modales/acerca-de-mi/acerca-de-mi.component';
+
 import {HttpClientModule} from '@angular/common/http';
 import { PersonaComponent } from './componentes/persona/persona.component';
-import { DashboardComponent } from './componentes/dashboard/dashboard.component';
-import { FormRegisterComponent } from './form-register/form-register.component';
+import { FormRegisterComponent } from './modales/form-register/form-register.component';
+import { FormAboutComponent } from './modales/form-about/form-about.component';
 
 
 
@@ -28,7 +30,7 @@ import { FormRegisterComponent } from './form-register/form-register.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent,    
     FormContactoComponent,
     FormLoginComponent,
     ExperienciaComponent,
@@ -39,12 +41,11 @@ import { FormRegisterComponent } from './form-register/form-register.component';
     NavComponent,
     FooterComponent,
     Pag404Component,
-
     IndiceComponent,
-    AcercaDeMiComponent,
     PersonaComponent,
-    DashboardComponent,
-    FormRegisterComponent,
+    FormRegisterComponent,    
+    FormAboutComponent,
+    
   
   ],
   imports: [
@@ -54,7 +55,7 @@ import { FormRegisterComponent } from './form-register/form-register.component';
     HttpClientModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [interceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
