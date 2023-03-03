@@ -1,24 +1,37 @@
 import { Component, OnInit } from '@angular/core';
 import { Persona } from 'src/app/model/persona.model';
 import { PersonaService } from 'src/app/servicios/persona.service';
+import { TokenService } from 'src/app/servicios/token.service';
 
 @Component({
   selector: 'app-persona',
   templateUrl: './persona.component.html',
-  styleUrls: ['./persona.component.css']
+  styleUrls: ['./persona.component.css'],
 })
 export class PersonaComponent implements OnInit {
-
+  persona: Persona = new Persona('', '', '', '', '',);
   
-  persona: Persona = new Persona('', '', '', '', '');
+  roles: string[];
+  isAdmin: boolean = false;
 
-  logeado: boolean = true;
-
-  constructor(public personaService : PersonaService) { }
+  constructor(
+    public personaService: PersonaService,
+    private tokenService: TokenService
+  ) {}
 
   ngOnInit(): void {
-    console.log('oninit funciona')
-    this.personaService.getPersona().subscribe(data=>{this.persona = data})
+    this.personaService.getPersona(this.persona.id).subscribe((data) => {
+      this.persona = data;
+    });
+    this.roles = this.tokenService.getAuthorities();
+    this.roles.forEach((rol) => {
+      if (rol === 'ROLE_ADMIN') {
+        this.isAdmin = true;
+      }
+    });
+
+
   }
 
+  
 }

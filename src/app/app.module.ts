@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { interceptorProvider } from './servicios/main-interceptor.service';
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -19,10 +19,11 @@ import { Pag404Component } from './componentes/pag404/pag404.component';
 
 import { IndiceComponent } from './componentes/indice/indice.component';
 
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { PersonaComponent } from './componentes/persona/persona.component';
 import { FormRegisterComponent } from './modales/form-register/form-register.component';
 import { FormAboutComponent } from './modales/form-about/form-about.component';
+import { InterceptorService } from './servicios/interceptor.service';
 
 
 
@@ -55,7 +56,9 @@ import { FormAboutComponent } from './modales/form-about/form-about.component';
     HttpClientModule,
     FormsModule,
   ],
-  providers: [interceptorProvider],
+  providers: [
+    {provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

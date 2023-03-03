@@ -16,10 +16,10 @@
         </div>
 
         <div class="container-fluid sobreMi col-8 cuerpos">
-          <div class="iconos" *ngIf="logeado" style="cursor: pointer;">
+          <div class="iconos" *ngIf="isAdmin" style="cursor: pointer;">
             <span data-bs-toggle="modal" data-bs-target="#persona"><i class="bi bi-pencil-square"></i></span>
-
           </div>
+          
 
           <p class="presentacion"><strong>{{persona.nombre}} {{persona.apellido}} </strong> <u>{{persona.titulo}}</u>
           </p>

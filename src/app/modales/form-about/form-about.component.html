@@ -9,7 +9,7 @@
         <div class="mb-3">
           <p>{{nombre}}</p>
           <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" value="nombre"  [(ngModel)]="nombre" name="zapato">
+          <input type="text" class="form-control" id="exampleFormControlInput1" value="nombre"  [(ngModel)]="nombre" name="nombre">
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Apellido:</label>
@@ -31,7 +31,9 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="submit" class="btn botones" (click)="grabar()">Guardar</button>
+        <button type="submit" class="btn botones" (click)="actualizaPersona()">Guardar</button>
+        <button type="submit" class="btn botones" (click)="crearPersona()">Crear</button>
+        
       </div>
     </div>
   </div>
