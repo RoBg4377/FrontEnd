@@ -23,7 +23,8 @@ import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { PersonaComponent } from './componentes/persona/persona.component';
 import { FormRegisterComponent } from './modales/form-register/form-register.component';
 import { FormAboutComponent } from './modales/form-about/form-about.component';
-import { InterceptorService } from './servicios/interceptor.service';
+import { interceptorProvider } from './servicios/interceptor.service';
+
 
 
 
@@ -57,7 +58,7 @@ import { InterceptorService } from './servicios/interceptor.service';
     FormsModule,
   ],
   providers: [
-    {provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true}
+    interceptorProvider
   ],
   bootstrap: [AppComponent]
 })

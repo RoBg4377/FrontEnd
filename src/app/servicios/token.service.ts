@@ -18,7 +18,7 @@ export class TokenService {
   }
 
   public getToken(): string {
-    return sessionStorage.getItem(AUTHORITIES_KEY);
+    return sessionStorage.getItem(TOKEN_KEY);
   }
 
   public setUserName(userName: string): void {

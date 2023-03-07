@@ -35,14 +35,15 @@ export class FormAboutComponent implements OnInit {
   }
 
   actualizaPersona(){
-    const persona  = new Persona (this.nombre, this.apellido, this.titulo, this.foto, this.prese);
+    const persona  = new Persona (1, this.nombre, this.apellido, this.titulo, this.foto, this.prese);
     this.personaService.update(persona).subscribe(
       data =>{
         alert('Actualizado correctamente');
-        this.router.navigate(['persona'])
+        this.router.navigate(['persona']);
+        window.location.reload();
       },
       err => {
-        alert('no se pudo actulaizar');
+        window.location.reload();
         this.router.navigate(['persona'])
       }
     )
@@ -50,6 +51,8 @@ export class FormAboutComponent implements OnInit {
 
   }
 
-  crearPersona(){}
+  crearPersona(){
+
+  }
 
 }

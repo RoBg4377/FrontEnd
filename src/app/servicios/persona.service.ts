@@ -20,10 +20,10 @@ export class PersonaService {
 
   
 
-  public getPersona(id : number): Observable<Persona>{
+  public getPersona(id_pers : number): Observable<Persona>{
     console.log('get persona observable')
 
-    return this.http.get<Persona>(this.URL+`find/${id}`);
+    return this.http.get<Persona>(this.URL+`find/${id_pers}`);
   }
 
   public crear(persona: Persona): Observable<any>{
@@ -31,6 +31,6 @@ export class PersonaService {
   }
 
   public update(persona: Persona): Observable<any>{
-    return this.http.post<any>(this.URL + 'editar', persona)
+    return this.http.put<any>(this.URL + 'editar', persona)
   }
 }

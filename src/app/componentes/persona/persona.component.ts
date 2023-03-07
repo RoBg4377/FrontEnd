@@ -9,7 +9,7 @@ import { TokenService } from 'src/app/servicios/token.service';
   styleUrls: ['./persona.component.css'],
 })
 export class PersonaComponent implements OnInit {
-  persona: Persona = new Persona('', '', '', '', '',);
+  persona: Persona = new Persona(1,'', '', '', '', '',);
   
   roles: string[];
   isAdmin: boolean = false;
@@ -20,7 +20,7 @@ export class PersonaComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.personaService.getPersona(this.persona.id).subscribe((data) => {
+    this.personaService.getPersona(this.persona.id_pers).subscribe((data) => {
       this.persona = data;
     });
     this.roles = this.tokenService.getAuthorities();
@@ -29,7 +29,7 @@ export class PersonaComponent implements OnInit {
         this.isAdmin = true;
       }
     });
-
+    console.log(this.persona)
 
   }
 
