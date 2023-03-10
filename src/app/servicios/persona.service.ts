@@ -4,33 +4,22 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { Persona } from '../model/persona.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PersonaService {
+  URL = 'http://localhost:8080/persona/';
 
-  URL = 'http://localhost:8080/persona/'
-  
+  constructor(private http: HttpClient) {}
 
-
-  
-
-  constructor(private http: HttpClient) {
-    
+  public getPersona(id_pers: number): Observable<Persona> {
+    return this.http.get<Persona>(this.URL + `find/${id_pers}`);
   }
 
-  
-
-  public getPersona(id_pers : number): Observable<Persona>{
-    console.log('get persona observable')
-
-    return this.http.get<Persona>(this.URL+`find/${id_pers}`);
+  public crear(persona: Persona): Observable<any> {
+    return this.http.post<any>(this.URL + 'crear', persona);
   }
 
-  public crear(persona: Persona): Observable<any>{
-    return this.http.post<any>(this.URL + 'crear', persona)
-  }
-
-  public update(persona: Persona): Observable<any>{
-    return this.http.put<any>(this.URL + 'editar', persona)
+  public update(persona: Persona): Observable<any> {
+    return this.http.put<any>(this.URL + 'editar', persona);
   }
 }

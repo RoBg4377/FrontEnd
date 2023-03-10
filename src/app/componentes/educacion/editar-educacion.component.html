@@ -1,0 +1,30 @@
+<div class="container-fluid sobreMi col-8 cuerpos">
+  <h3 class="subtitulo">Editar Educacion Id: {{educacion.id_edu}}</h3>
+  <br>
+  
+  <div class="mb-3 puntos">
+    <label for="exampleFormControlInput1" class="form-label">Academia:</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="educacion.academia">
+  </div>
+  <div class="mb-3 puntos">
+    <label for="exampleFormControlInput1" class="form-label">Curso: </label>
+    <input type="text" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="educacion.curso">
+  </div>
+  <div class="mb-3 puntos">
+    <label for="exampleFormControlInput1" class="form-label">Temas: </label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="educacion.temas"></textarea>
+  </div>
+  <div class="mb-3 puntos">
+    <label for="exampleFormControlTextarea1" class="form-label">Fecha:</label>
+    <input type="date" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="educacion.fecha">
+  </div>
+  <div class="mb-3 puntos">
+    <label for="exampleFormControlInput1" class="form-label">Enlace: </label>
+    <input type="url" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="educacion.enlace">
+  </div>
+  <div class="mb-3">
+    <button type="submit" class="btn botones" (click)="editarEducacion()">Actualizar</button>
+    <button type="submit" class="btn botones" routerLink="/educacion">Cancelar</button>
+
+  </div>
+</div>

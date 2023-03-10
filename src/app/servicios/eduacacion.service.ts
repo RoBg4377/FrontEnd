@@ -4,18 +4,29 @@ import { Observable } from 'rxjs';
 import { Educacion } from '../model/educacion';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class EduacacionService {
+  URL = 'http://localhost:8080/educacion/';
 
-  URL = 'http://localhost:8080/educacion/'
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
+  public educacionList(): Observable<Educacion[]> {
+    return this.http.get<Educacion[]>(this.URL + 'traer');
+  }
 
-  public educacionList(): Observable<Educacion[]>{
-    console.log('get persona observable')
+  public eduCrear(educacion : Educacion): Observable<any>{
+    return this.http.post<any>(this.URL + 'crear', educacion);
+  }
 
-    return this.http.get<Educacion[]>(this.URL+'traer');
+  public eduEditar(id_edu: number, educacion : Educacion): Observable<any>{
+    return this.http.put<any>(this.URL + `editar/${id_edu}`, educacion);
+  }
+  public eduBorrar(id_edu: number): Observable<any> {
+    return this.http.delete<any>(this.URL + `borrar/${id_edu}`);
+  }
 
+  public eduTraer(id_edu: number): Observable<Educacion>{
+    return this.http.get<Educacion>(this.URL + `find/${id_edu}`)
   }
 }

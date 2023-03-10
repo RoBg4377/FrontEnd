@@ -99,7 +99,7 @@ footer {
   border-radius: 15px;
 }
 .iconos{
-  margin-left: 60vw;
+  margin-right: 60vw;
   margin-top: -5vh;
   color: #9fcc40;
   
@@ -119,4 +119,17 @@ footer {
   background-color: #1F1D36;
   color: #9fcc40;
   border-color:#9fcc40;
+}
+.titulo{  
+  font-weight: bold;  
+  color: #9fcc40;
+  font-family: 'Concert One', cursive;
+}
+.subtitulo{
+  color: #9fcc40;
+  font-family: 'Concert One', cursive;
+  text-align: center;
+}
+.puntos{
+  color: #9fcc40;
 }

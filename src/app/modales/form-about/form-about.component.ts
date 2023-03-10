@@ -18,12 +18,6 @@ export class FormAboutComponent implements OnInit {
 
   persona: Persona = null;
 
-  //  colocaNombre(event : Event){
-  //   this.nombre = (<HTMLInputElement>event.target).value;
-  //  }
-
-  grabar() {}
-
   constructor(
     private personaService : PersonaService,
     private activatedRoute : ActivatedRoute,
@@ -37,9 +31,9 @@ export class FormAboutComponent implements OnInit {
   actualizaPersona(){
     const persona  = new Persona (1, this.nombre, this.apellido, this.titulo, this.foto, this.prese);
     this.personaService.update(persona).subscribe(
-      data =>{
-        alert('Actualizado correctamente');
+      data =>{        
         this.router.navigate(['persona']);
+        alert('Actualizado correctamente');
         window.location.reload();
       },
       err => {

@@ -10,6 +10,7 @@ import { Pag404Component } from './componentes/pag404/pag404.component';
 import { PersonaComponent } from './componentes/persona/persona.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { GuardServiceService as guard } from './guards/guard-service.service';
+import { EditarEducacionComponent } from './componentes/educacion/editar-educacion.component';
 
 
 
@@ -21,7 +22,7 @@ const routes: Routes = [
   {path: 'educacion', component: EducacionComponent, canActivate: [guard], data: { expectedRol: ['admin', 'user'] }},
   {path: 'skills', component: SkillsComponent, canActivate: [guard], data: { expectedRol: ['admin', 'user'] }},
   {path: 'proyectos', component: ProyectosComponent,canActivate: [guard], data: { expectedRol: ['admin', 'user'] }},
-  
+  {path: 'editedu/:id', component: EditarEducacionComponent},
   {path: '**', component: Pag404Component}
 ];
 
