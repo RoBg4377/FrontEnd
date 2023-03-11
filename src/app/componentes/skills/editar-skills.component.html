@@ -1,0 +1,22 @@
+<div class="container-fluid sobreMi col-8 cuerpos">
+  <h3 class="subtitulo">Editar Habilidad Id: {{skill.id_sk}}</h3>
+  <br>
+  
+  <div class="mb-3 puntos">
+    <label for="exampleFormControlInput1" class="form-label">Habilidad:</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="skill.nom_skill">
+  </div>
+  <div class="mb-3 puntos">
+    <label for="exampleFormControlTextarea1" class="form-label">Fecha:</label>
+    <input type="number" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="skill.porcentaje">
+  </div>
+  <div class="mb-3 puntos">
+    <label for="exampleFormControlInput1" class="form-label">Enlace: </label>
+    <input type="url" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="skill.logo_skills">
+  </div>
+  <div class="mb-3">
+    <button type="submit" class="btn botones" (click)="editarEducacion()">Actualizar</button>
+    <button type="submit" class="btn botones" routerLink="/skills">Cancelar</button>
+
+  </div>
+</div>

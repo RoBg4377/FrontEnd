@@ -1,0 +1,38 @@
+<div class="modal fade" id="proyectos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="border: solid 2px #9fcc40">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Agregar Nuevo Proyecto
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Nombre del Proyecto:</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" value="nombre" [(ngModel)]="nombre_pro"
+            name="compania" />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Descripción:
+          </label>
+          <textarea name="" id="" cols="30" rows="5" class="form-control" id="exampleFormControlInput1" [(ngModel)]="descripcion_pro"></textarea>          
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Fecha del Proyecto:</label>
+          <input type="date" class="form-control" id="exampleFormControlInput1" [(ngModel)]="fecha_pro" />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Enlace:
+          </label>
+          <input type="url" class="form-control" id="exampleFormControlInput1" [(ngModel)]="enlace_pro" />
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn botones" (click)="crearProyecto()">
+          Crear
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

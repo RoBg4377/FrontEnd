@@ -1,3 +1,20 @@
 .presentacion {
   text-align: center;
 }
+.ico{
+  margin: 0.5vw;
+  color: #9fcc40;
+  border: #9fcc40 solid 2px;
+}
+.update{
+  width: 15%;
+  margin-left: auto;
+}
+.redes {
+  color: #864879;
+  font-size: xx-large;
+}
+.redes:hover {
+  cursor: pointer;
+  color: #e9a6a6;
+}

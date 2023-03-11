@@ -1,0 +1,34 @@
+<div class="container-fluid sobreMi col-8 cuerpos">
+  <h3 class="subtitulo">Editar Experiencia Id: {{experiencia.id_exp}}</h3>
+  <br>
+  
+  <div class="mb-3 puntos">
+    <label for="exampleFormControlInput1" class="form-label">Compañía:</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="experiencia.compania">
+  </div>
+  <div class="mb-3 puntos">
+    <label for="exampleFormControlInput1" class="form-label">Puesto: </label>
+    <input type="text" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="experiencia.puesto">
+  </div>
+  <div class="mb-3 puntos">
+    <label for="exampleFormControlInput1" class="form-label">Tarea: </label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="experiencia.tarea"></textarea>
+  </div>
+  <div class="mb-3 puntos">
+    <label for="exampleFormControlInput1" class="form-label">Imágen: </label>
+    <input type="url" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="experiencia.img">
+  </div>
+  <div class="mb-3 puntos">
+    <label for="exampleFormControlTextarea1" class="form-label">Fecha de inicio:</label>
+    <input type="date" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="experiencia.fechaIni">
+  </div>
+  <div class="mb-3 puntos">
+    <label for="exampleFormControlTextarea1" class="form-label">Fecha de fin:</label>
+    <input type="date" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="experiencia.fechaFin">
+  </div>
+  
+  <div class="mb-3">
+    <button type="submit" class="btn botones" (click)="editarExperiencia()">Actualizar</button>
+    <button type="submit" class="btn botones" routerLink="/experiencia">Cancelar</button>
+  </div>
+</div>

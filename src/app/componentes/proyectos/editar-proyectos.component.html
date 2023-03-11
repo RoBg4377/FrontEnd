@@ -1,0 +1,33 @@
+<div class="container-fluid sobreMi col-8 cuerpos">
+  <h3 class="subtitulo">Editar Proyecto Id: {{ proyecto.id_pro}}</h3>
+  <br/>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Nombre del Proyecto:</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" value="nombre"
+      [(ngModel)]="proyecto.nombre_pro" name="compania" />
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Descripción:
+    </label>
+    <textarea name="" id="" cols="30" rows="5" class="form-control" id="exampleFormControlInput1"
+      [(ngModel)]="proyecto.descripcion_pro"></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Fecha del Proyecto:</label>
+    <input type="date" class="form-control" id="exampleFormControlInput1" [(ngModel)]="proyecto.fecha_pro" />
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Enlace: </label>
+    <input type="url" class="form-control" id="exampleFormControlInput1" [(ngModel)]="proyecto.enlace_pro" />
+  </div>
+  <div class="mb-3">
+    <button type="submit" class="btn botones" (click)="editarProyecto()">
+      Actualizar
+    </button>
+    <button type="submit" class="btn botones" routerLink="/proyectos">
+      Cancelar
+    </button>
+  </div>
+</div>
+
+  

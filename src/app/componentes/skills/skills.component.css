@@ -7,8 +7,9 @@
   font-size: 35px;
 }
 hr {
-  height: 10px;
-  background-color: #9fcc40;
+  height: 5px;
+  background-color: #408bcc;
+  margin-top: 2rem;
 }
 .nom{
   color:#df8bdd;
@@ -30,4 +31,8 @@ hr {
   margin: 0.5vw;
   color: #9fcc40;
   border: #9fcc40 solid 2px;
+}
+.update{
+  width: 15%;
+  margin-left: auto;
 }

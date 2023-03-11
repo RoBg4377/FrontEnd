@@ -6,17 +6,34 @@
         <img src="../../../assets/dist/MiLogo.png" alt="logo Rodrigo Benavides" style="width:5rem;">
         <h2 class="navbar">Experiencia:</h2>
       </span>
-      <div class="iconos me-5" *ngIf="isAdmin">
-        <p>Agregar <i class="bi bi-plus-square-fill"></i></p>
+      <div class="iconos me-5" *ngIf="isAdmin" style="cursor: pointer;">
+        <span data-bs-toggle="modal" data-bs-target="#experiencia">
+          <p>Agregar <i class="bi bi-plus-square-fill"></i></p>
+        </span>
       </div>
     </div>
   </nav>
 
   <div class="cuerpos" *ngFor="let experiencia of experiencias">
-    <h5 class="card-header" style="color: #9fcc40;">{{experiencia.fechaIni}} al {{experiencia.fechaFin}}</h5>
+
+    <div *ngIf="isAdmin">
+      <div class="update">
+        <button class="btn btn-outline-secondary iconos ico me-0">
+          <span routerLink="/editexp/{{experiencia.id_exp}}"><i class="bi bi-pencil-square"></i></span>
+        </button>        
+        <button class="btn btn-outline-secondary iconos ico me-0"(click)="borrarExperiencia(experiencia.id_exp)">
+          <i class="bi bi-trash3-fill"></i>
+        </button>
+      </div>
+    </div>
+    
+    <h4 class="card-header" style="color: #9fcc40;">Desde: {{experiencia.fechaIni}} al {{experiencia.fechaFin}}</h4>
+    <br>
     <div class="card-body">
-      <h5 class="card-title" style="color: #9fcc40;">{{experiencia.compania}}</h5>
-      <h4 style="color: #9fcc40;">{{experiencia.puesto}}</h4>
+      <h4 class="card-title" style="color: #9fcc40;">Trabajo para: {{experiencia.compania}}</h4>
+      <br>
+      <h5 style="color: #9fcc40;">Puesto: {{experiencia.puesto}}</h5>
+      <h6 style="color: #9fcc40;">Tareas desempeñadas:</h6>
       <p class="card-text parrafo">{{experiencia.tarea}}</p>
 
       <div class="text-center">
@@ -27,3 +44,4 @@
 </div>
 <app-form-contacto></app-form-contacto>
 <app-footer></app-footer>
+<app-form-experiencia></app-form-experiencia>

@@ -10,10 +10,10 @@ import { TokenService } from 'src/app/servicios/token.service';
   styleUrls: ['./educacion.component.css'],
 })
 export class EducacionComponent implements OnInit {
+
   educaciones: Educacion[];
   roles: string[];
-  isAdmin: boolean = false;
-  
+  isAdmin: boolean = false;  
   educacion: Educacion;
 
   constructor(
@@ -37,7 +37,6 @@ export class EducacionComponent implements OnInit {
   
 
   borrarEducacion(id_edu: number) {
-    alert('boorrar ' + id_edu);
     this.educacionService.eduBorrar(id_edu).subscribe(
       () => {
         alert('eliminado')

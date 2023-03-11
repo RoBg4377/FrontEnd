@@ -1,18 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Educacion } from 'src/app/model/educacion';
+import { Skills } from 'src/app/model/skills';
 import { EduacacionService } from 'src/app/servicios/eduacacion.service';
+import { SkillsService } from 'src/app/servicios/skills.service';
 
 @Component({
-  selector: 'app-editar-educacion',
-  templateUrl: './editar-educacion.component.html',
-  styleUrls: ['./editar-educacion.component.css'],
+  selector: 'app-editar-skills',
+  templateUrl: './editar-skills.component.html',
+  styleUrls: ['./editar-skills.component.css']
 })
-export class EditarEducacionComponent implements OnInit {
-  educacion: Educacion;
+export class EditarSkillsComponent implements OnInit {
+
+  skill: Skills;
 
   constructor(
-    private educacionService: EduacacionService,
+    private skillsService: SkillsService,
     private activatedRoute: ActivatedRoute,
     private router: Router
   ) {}
@@ -20,27 +22,28 @@ export class EditarEducacionComponent implements OnInit {
   ngOnInit(): void {
     const id = this.activatedRoute.snapshot.params['id'];
     console.log(id);
-    this.educacionService.eduTraer(id).subscribe(
+    this.skillsService.traeSkills(id).subscribe(
       (data) => {
-        this.educacion = data;
+        this.skill = data;
       },
       (err) => {
-        this.router.navigate(['educacion']);
+        this.router.navigate(['skills']);
       }
     );
   }
 
   editarEducacion(): void {
     const id = this.activatedRoute.snapshot.params['id'];
-    this.educacionService.eduEditar(id, this.educacion).subscribe(
+    this.skillsService.editaSkills(id, this.skill).subscribe(
       (data) => {
-        this.router.navigate(['educacion']);
+        this.router.navigate(['skills']);
         alert('Educación actualizada');
       },
       (err) => {
-        this.router.navigate(['educacion']);
+        this.router.navigate(['skills']);
         alert('Educación actualizada');
       }
     );
   }
+
 }

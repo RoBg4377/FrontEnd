@@ -23,8 +23,25 @@ export class ExperienciaComponent implements OnInit {
         this.isAdmin = true;
       }
     });
-    this.experienciaService.experienciaList().subscribe(data => {this.experiencias = data})
+    this.experienciaService.experienciaList().subscribe(
+      data => {
+        this.experiencias = data;
+      });
     return this.experiencias;
+  }
+
+  borrarExperiencia(id_exp: number) {
+    this.experienciaService.borraExp(id_exp).subscribe(
+      () => {
+        alert('eliminado')
+        window.location.reload();
+      },
+      () => {
+        window.location.reload();
+        alert('eliminado correctamente')
+      }
+    )
+    
   }
 
 }

@@ -1,0 +1,42 @@
+<div class="modal fade" id="experiencia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="border: solid 2px #9fcc40;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agregar Nueva Experiencia</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Compañía:</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" value="nombre"  [(ngModel)]="compania" name="compania">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Puesto: </label>
+          <input type="text" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="puesto">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Tarea: </label>
+          <input type="text" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="tarea">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Imagen: </label>
+          <input type="url" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="img">
+        </div>
+      
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Desde la fecha:</label>
+          <input type="date" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="fechaIni">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Hasta la fecha:</label>
+          <input type="date" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="fechaFin">
+        </div>
+      
+        
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn botones" (click)="creaExperiencia()">Crear</button>
+      </div>
+    </div>
+  </div>
+</div>

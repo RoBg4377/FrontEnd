@@ -1,5 +1,6 @@
 export class Proyectos {
 
+    id_pro?: number;
     nombre_pro : String;
     descripcion_pro : String;
     fecha_pro : String;

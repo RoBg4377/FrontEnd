@@ -30,6 +30,14 @@ export class ProyectosComponent implements OnInit {
     return this.proyectos;
   }
 
-  
+  borrarExperiencia(id_pro: number): void{
+    this.proyectoService.borrarProyecto(id_pro).subscribe(
+      () => {
+        alert('proyecto borrado')
+      }
+    )
+    alert('proyecto borrado')
+    window.location.reload();
+  }
 
 }

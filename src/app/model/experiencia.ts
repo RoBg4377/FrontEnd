@@ -1,5 +1,5 @@
 export class Experiencia {
-
+  id_exp?: number;
   compania :String;
   puesto : String;
   tarea : String;

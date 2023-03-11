@@ -11,15 +11,15 @@ export class PersonaService {
 
   constructor(private http: HttpClient) {}
 
-  public getPersona(id_pers: number): Observable<Persona> {
+  public traerPersona(id_pers: number): Observable<Persona> {
     return this.http.get<Persona>(this.URL + `find/${id_pers}`);
   }
 
-  public crear(persona: Persona): Observable<any> {
+  public crearPersona(persona: Persona): Observable<any> {
     return this.http.post<any>(this.URL + 'crear', persona);
   }
 
-  public update(persona: Persona): Observable<any> {
-    return this.http.put<any>(this.URL + 'editar', persona);
+  public editarPersona(id_pers: number, persona: Persona): Observable<any>{
+    return this.http.put<any>(this.URL +`editar/${id_pers}`, persona)
   }
 }

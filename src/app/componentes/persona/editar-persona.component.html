@@ -1,0 +1,33 @@
+<div class="container-fluid sobreMi col-8 cuerpos">
+  <h3 class="subtitulo">Editar Acerca de mi:</h3>
+  <br>
+  
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" value="nombre"  [(ngModel)]="persona.nombre" name="nombre">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Apellido:</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="persona.apellido">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Título</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="persona.titulo">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Presentación:</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="persona.descripcion"></textarea>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">foto</label>
+    <input type="url" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="persona.foto">
+  </div>
+  <div class="mb-3">
+    <button type="submit" class="btn botones" (click)="editarPersona()">Actualizar</button>
+    <button type="submit" class="btn botones" routerLink="/persona">Cancelar</button>
+  </div>
+</div>
+  
+  

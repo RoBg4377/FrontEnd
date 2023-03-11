@@ -7,11 +7,23 @@
         <h2 class="navbar">Proyectos</h2>
       </span>
       <div class="iconos me-5" *ngIf="isAdmin">
-        <p>Agregar <i class="bi bi-plus-square-fill"></i></p>
+        <span data-bs-toggle="modal" data-bs-target="#proyectos">
+          <p>Agregar <i class="bi bi-plus-square-fill"></i></p>
+        </span>
       </div>
     </div>
   </nav>
   <div class="cuerpos" *ngFor="let proyecto of proyectos">
+    <div *ngIf="isAdmin">
+      <div class="update">
+        <button class="btn btn-outline-secondary iconos ico me-0">
+          <span routerLink="/editpro/{{proyecto.id_pro}}"><i class="bi bi-pencil-square"></i></span>
+        </button>        
+        <button class="btn btn-outline-secondary iconos ico me-0" (click)="borrarExperiencia(proyecto.id_pro)">
+          <i class="bi bi-trash3-fill"></i>
+        </button>
+      </div>
+    </div>
     <h5 class="card-header" style="color: #9fcc40;">{{proyecto.nombre_pro}}</h5>
     <div class="card-body">
       <h5 class="card-title" style="color: #9fcc40;">{{proyecto.fecha_pro}}</h5>
@@ -23,3 +35,4 @@
 </div>
 <app-form-contacto></app-form-contacto>
 <app-footer></app-footer>
+<app-form-proyectos></app-form-proyectos>

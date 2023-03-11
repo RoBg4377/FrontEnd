@@ -11,6 +11,10 @@ import { PersonaComponent } from './componentes/persona/persona.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { GuardServiceService as guard } from './guards/guard-service.service';
 import { EditarEducacionComponent } from './componentes/educacion/editar-educacion.component';
+import { EditarSkillsComponent } from './componentes/skills/editar-skills.component';
+import { EditarExperienciaComponent } from './componentes/experiencia/editar-experiencia.component';
+import { EditarProyectosComponent } from './componentes/proyectos/editar-proyectos.component';
+import { EditarPersonaComponent } from './componentes/persona/editar-persona.component';
 
 
 
@@ -22,7 +26,12 @@ const routes: Routes = [
   {path: 'educacion', component: EducacionComponent, canActivate: [guard], data: { expectedRol: ['admin', 'user'] }},
   {path: 'skills', component: SkillsComponent, canActivate: [guard], data: { expectedRol: ['admin', 'user'] }},
   {path: 'proyectos', component: ProyectosComponent,canActivate: [guard], data: { expectedRol: ['admin', 'user'] }},
-  {path: 'editedu/:id', component: EditarEducacionComponent},
+  {path: 'editpers/:id', component: EditarPersonaComponent, canActivate: [guard], data: { expectedRol: ['admin'] }},
+  {path: 'editedu/:id', component: EditarEducacionComponent, canActivate: [guard], data: { expectedRol: ['admin'] }},
+  {path: 'editskills/:id', component: EditarSkillsComponent, canActivate: [guard], data: { expectedRol: ['admin'] }},
+  {path: 'editexp/:id', component: EditarExperienciaComponent, canActivate: [guard], data: { expectedRol: ['admin'] }},
+  {path: 'editpro/:id', component: EditarProyectosComponent, canActivate: [guard], data: { expectedRol: ['admin'] }},
+
   {path: '**', component: Pag404Component}
 ];
 

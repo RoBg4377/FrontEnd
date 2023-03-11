@@ -2,7 +2,7 @@
 <div class="cuerpo">
   <div class="container text-center">
     <div class="row row-cols-2" style="padding: 7vh;">
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 col-12">
         <div>
           <img class="logo" src="../../../assets/dist/MiLogo.png" alt="logo Rodrigo Benavides">
         </div>
@@ -10,7 +10,7 @@
         <button type="button" class="btn botones" data-bs-toggle="modal" data-bs-target="#registro">Crear
           Cuenta</button>
       </div>
-      <div class="col-lg-6 col-sm-12 saludo" style="text-align: left;">
+      <div class="col-lg-6 col-sm-12 col-12 saludo " style="text-align: left;">
         <div *ngIf="isLogged; else loggedOut">
           <div class="ps-5">
             <p class="uno">saludo <span class="dos">=</span> </p>
@@ -19,7 +19,7 @@
             <p class="tres">este es mi portfolio"<span class="dos">_</span></p>
           </div>
         </div>
-        <ng-template #loggedOut>
+        <ng-template #loggedOut >
           <div class="ps-5">
             <p class="uno">saludo <span class="dos">=</span> </p>
             <p class="tres">"¡Hola!. Soy </p>

@@ -20,7 +20,7 @@ export class PersonaComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.personaService.getPersona(this.persona.id_pers).subscribe((data) => {
+    this.personaService.traerPersona(this.persona.id_pers).subscribe((data) => {
       this.persona = data;
     });
     this.roles = this.tokenService.getAuthorities();
@@ -30,7 +30,15 @@ export class PersonaComponent implements OnInit {
       }
     });
     console.log(this.persona)
+  }
+  mail: boolean = false;
+  whatsapp : boolean = false;
 
+  mostrarMail(){
+    this.mail = !this.mail;
+  }
+  mostrarWhats(){
+    this.whatsapp = !this.whatsapp;
   }
 
   

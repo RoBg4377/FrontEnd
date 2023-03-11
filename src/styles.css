@@ -8,29 +8,31 @@ body{
   background-image: url(src/assets/dist/fondocodigo.jpg); padding-top: 30px; padding-bottom: 30px;
   background-size:cover;
 }
+
 .miFoto {
-  z-index: 9;
-  position:relative;
-  margin-top: 8rem;
-  width: 18vw;
-  height: 35vh;
-  border: solid 4px #864879;
+  width: 80%;
+  height: 70%;
   border-radius: 50%;
+  border:   solid 3px #864879 ;
 }
+.contenedor{
+  display: flex;
+  align-items: center;
+}
+
 .about {
-  height: 80vh;
   display: flex;
   font-family: 'Concert One', cursive;
   font-size: 15px;
 }
 .sobreMi {
   background-color: #1f1d36;
-  padding: 3vh 2vh;
   border: solid 3px #864879;
   color:#6c757d;
   margin: 2vh 3vh;
   font-family: 'Indie Flower', cursive;
   font-size: 3.5vh;
+  border-radius: 20px;
 }
 .navbar {
   background-color: #452043;
@@ -59,12 +61,13 @@ h2 {
 footer {
   height: 10vh;
   background-color: #864879;
-  
+  height: fit-content;
   color: #1f1d36;
 }
 .pie{
-  width: 20vw;
-  margin: auto;
+  width: 22vw;
+  font-size: 2.5vh;
+  text-align: center;
 }
 .logo{
   margin: 3rem 2rem; 

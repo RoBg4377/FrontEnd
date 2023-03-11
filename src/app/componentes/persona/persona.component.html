@@ -8,33 +8,52 @@
       </span>
     </div>
     <div class="container-fluid baner">
-
       <div class="row">
-
-        <div class="col-3 about">
-          <img class="miFoto" src="{{persona.foto}}" alt="">
+        <div class="contenedor col-lg-3 col-sm-12">
+          <img class="miFoto m-auto" src="{{persona.foto}}" alt="">
         </div>
-    
-        
-
-        <div class="container-fluid sobreMi col-8 cuerpos">
-          <div class="iconos" *ngIf="isAdmin" style="cursor: pointer;">
-            <span data-bs-toggle="modal" data-bs-target="#persona"><i class="bi bi-pencil-square"></i></span>
-          </div>
           
-
-          <p class="presentacion"><strong>{{persona.nombre}} {{persona.apellido}} </strong> <u>{{persona.titulo}}</u>
-          </p>
-          <br>
-          <p>{{persona.descripcion}}</p>
-
+        <div class="col-lg-9 col-sm-12">
+          
+          <div class="sobreMi">
+            <div *ngIf="isAdmin">
+            <div class="update">
+              <button class="btn btn-outline-secondary iconos ico ms-auto">
+                <span routerLink="/editpers/{{persona.id_pers}}"><i class="bi bi-pencil-square"></i></span>
+              </button>
+            </div>
+          </div>
+            <p class="presentacion"><strong class="titulo">{{persona.nombre}} {{persona.apellido}} </strong><br> <u
+                class="subtitulo">{{persona.titulo}}</u>
+            </p>
+            <br>
+            <p class="px-3">{{persona.descripcion}}</p>
+            <div class="pt-5">
+              <div class="container" style="text-align: center;">
+                <div class="position-relative">
+                  <i class="redes bi bi-whatsapp px-2" (click)="mostrarWhats()"></i>
+                  <a href="https://github.com/RoBg4377" target="_blank"><i class="redes bi bi-github px-2"></i></a>
+                  <a href="https://www.linkedin.com/in/rodrigo-benavides-697136255/" target="_blank"><i
+                      class="redes bi bi-linkedin px-2"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100087492722872" target="_blank"><i
+                      class="redes bi bi-facebook px-2"></i></a>
+                  <i class="redes bi bi-envelope px-2" (click)="mostrarMail()"></i>
+                  <div *ngIf="mail">
+                    <p>robg4377@gmail.com</p>
+                  </div>
+                  <div *ngIf="whatsapp">
+                    <p>+54 9 381 5118423</p>
+                  </div>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
         </div>
-
-
+        
       </div>
     </div>
   </nav>
 </div>
 <app-form-contacto></app-form-contacto>
 <app-footer></app-footer>
-<app-form-about></app-form-about>

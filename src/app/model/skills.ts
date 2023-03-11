@@ -1,5 +1,6 @@
 export class Skills {
 
+  id_sk?: number;
   nom_skill : String;
   porcentaje : number;
   logo_skills : String;

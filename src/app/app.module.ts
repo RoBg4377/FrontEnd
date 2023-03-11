@@ -20,10 +20,16 @@ import { IndiceComponent } from './componentes/indice/indice.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { PersonaComponent } from './componentes/persona/persona.component';
 import { FormRegisterComponent } from './modales/form-register/form-register.component';
-import { FormAboutComponent } from './modales/form-about/form-about.component';
 import { interceptorProvider } from './servicios/interceptor.service';
 import { FormEducacionComponent } from './modales/form-educacion/form-educacion.component';
 import { EditarEducacionComponent } from './componentes/educacion/editar-educacion.component';
+import { FormSkillsComponent } from './modales/form-skills/form-skills.component';
+import { EditarSkillsComponent } from './componentes/skills/editar-skills.component';
+import { FormExperienciaComponent } from './modales/form-experiencia/form-experiencia.component';
+import { EditarExperienciaComponent } from './componentes/experiencia/editar-experiencia.component';
+import { FormProyectosComponent } from './modales/form-proyectos/form-proyectos.component';
+import { EditarProyectosComponent } from './componentes/proyectos/editar-proyectos.component';
+import { EditarPersonaComponent } from './componentes/persona/editar-persona.component';
 
 @NgModule({
   declarations: [
@@ -41,9 +47,15 @@ import { EditarEducacionComponent } from './componentes/educacion/editar-educaci
     IndiceComponent,
     PersonaComponent,
     FormRegisterComponent,
-    FormAboutComponent,
     FormEducacionComponent,
     EditarEducacionComponent,
+    FormSkillsComponent,
+    EditarSkillsComponent,
+    FormExperienciaComponent,
+    EditarExperienciaComponent,
+    FormProyectosComponent,
+    EditarProyectosComponent,
+    EditarPersonaComponent,
   ],
   imports: [
     BrowserModule,
