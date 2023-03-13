@@ -1,5 +1,5 @@
 .logo{
-  width: 65px;
+  width: 2rem;
   
 }
 .secciones{
@@ -7,9 +7,9 @@
   font-size: 35px;
 }
 hr {
-  height: 5px;
+  height: 4px;
   background-color: #408bcc;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .nom{
   color:#df8bdd;
@@ -20,7 +20,7 @@ hr {
 }
 .fondoBarra{
   background-color:#452043;
-  height: 25px;
+  height: 1.3rem;
 }
 .porcentaje{
   color: #452043;
