@@ -48,7 +48,7 @@ export class FormRegisterComponent implements OnInit {
         this.isRegister = true;
         this.isRegisterFail = false;
         alert('Cuenta creada exitosamente')
-        this.router.navigate(['/indice']);
+        this.router.navigate(['/inicio']);
         window.location.reload();
         
         
@@ -57,6 +57,7 @@ export class FormRegisterComponent implements OnInit {
         this.isRegister = false;
         this.isRegisterFail = true;
         this.errMsj = err.error.Mensaje;
+        this.router.navigate(['/inicio']);
       }
     );
   }

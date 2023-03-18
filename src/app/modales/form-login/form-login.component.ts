@@ -54,7 +54,7 @@ export class FormLoginComponent implements OnInit {
         this.roles = data.authorities;
 
         
-        this.router.navigate(['indice']);
+        this.router.navigate(['inicio']);
         window.location.reload();
         // console.log("inicio correcto")
       },
@@ -62,6 +62,7 @@ export class FormLoginComponent implements OnInit {
         this.isLogged = false;
         this.isLogginFail = true;
         this.errMsj = err.error;
+        this.router.navigate(['inicio']);
         console.log(this.errMsj);
       }
     );

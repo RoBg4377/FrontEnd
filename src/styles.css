@@ -2,6 +2,9 @@
 body{
   background-image: url(./assets/dist/fondocodigo.jpg);
   background-size: cover;
+  position: relative;
+  padding-bottom: 5rem;
+  min-height: 100vh;
 }
 
 .baner,.seccion{
@@ -59,10 +62,12 @@ h2 {
   color:#6c757d;
 }
 footer {
-  height: 10vh;
   background-color: #864879;
   height: fit-content;
+  width: 100%;
   color: #1f1d36;
+  position: absolute;
+  bottom: 0;
 }
 .pie{
   width: 22vw;
