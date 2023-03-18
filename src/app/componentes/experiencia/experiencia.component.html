@@ -27,7 +27,7 @@
       </div>
     </div>
     
-    <h4 class="card-header" style="color: #9fcc40;">Desde: {{experiencia.fechaIni}} al {{experiencia.fechaFin}}</h4>
+    <h4 class="card-header" style="color: #9fcc40;">Desde: {{experiencia.fechaIni+86400000|date:'d/M/yy'}} al {{experiencia.fechaFin+86400000|date:'d/M/yy'}}</h4>
     <br>
     <div class="card-body">
       <h4 class="card-title" style="color: #9fcc40;">Trabajo para: {{experiencia.compania}}</h4>

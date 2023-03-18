@@ -4,10 +4,10 @@ export class Educacion {
   public academia : String;
   public curso : String;
   public temas : String;
-  public fecha : String;
+  public fecha : number;
   public enlace : String;
 
-  public constructor (academia: String, curso: String, temas: String, fecha: String, enlace: String) {
+  public constructor (academia: String, curso: String, temas: String, fecha: number, enlace: String) {
     
     this.academia = academia;
     this.curso = curso;

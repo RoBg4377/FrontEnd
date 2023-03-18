@@ -14,7 +14,7 @@ export class FormEducacionComponent implements OnInit {
   academia : String = '';
   curso : String = '';
   temas : String = '';
-  fecha : String = '';
+  fecha : number;
   enlace : String = '';
 
   constructor(

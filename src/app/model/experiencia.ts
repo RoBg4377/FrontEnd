@@ -4,10 +4,10 @@ export class Experiencia {
   puesto : String;
   tarea : String;
   img: String;
-  fechaIni : String;
-  fechaFin : String;
+  fechaIni : number;
+  fechaFin : number;
 
-  public constructor(comp: String, pue: String, tar: String, img: String, ini: String, fin: String){
+  public constructor(comp: String, pue: String, tar: String, img: String, ini: number, fin: number){
     this.compania = comp;
     this.puesto = pue;
     this.tarea = tar;

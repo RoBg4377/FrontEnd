@@ -15,8 +15,8 @@ export class FormExperienciaComponent implements OnInit {
   puesto : String;
   tarea : String;
   img: String;
-  fechaIni : String;
-  fechaFin : String;
+  fechaIni : number;
+  fechaFin : number;
 
   constructor(
     private experienciaService: ExperienciaService,

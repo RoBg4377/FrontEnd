@@ -38,7 +38,7 @@
         <li class="lista">{{tema}}</li>
       </ul>
       <br>
-      <p style="color: #9fcc40;">{{educacion.fecha}}</p>
+      <p style="color: #9fcc40;">{{educacion.fecha +86400000|date:'d/M/yy'}}</p>
       <a href="{{educacion.enlace}}" target="_blank" class="btn btn-outline-secondary"
         style="color: #9fcc40; border: #9fcc40 1px solid;">Ir al sitio</a>
     </div>

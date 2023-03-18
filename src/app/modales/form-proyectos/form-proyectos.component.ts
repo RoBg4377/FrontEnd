@@ -13,7 +13,7 @@ export class FormProyectosComponent implements OnInit {
   id_pro?: number;
   nombre_pro: String;
   descripcion_pro: String;
-  fecha_pro: String;
+  fecha_pro: number;
   enlace_pro: String;
 
   constructor(
