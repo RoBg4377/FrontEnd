@@ -8,7 +8,7 @@ import { Skills } from '../model/skills';
 })
 export class SkillsService {
 
-  URL = 'http://localhost:8080/skills/';
+  URL = 'https://rbg-backend.onrender.com/skills/';
 
   constructor(private http: HttpClient) {}
 
