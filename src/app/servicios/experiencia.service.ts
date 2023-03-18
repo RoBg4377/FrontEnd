@@ -7,7 +7,7 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class ExperienciaService {
-  URL = 'https://rbg-backend.onrender.com/experiencia/'
+  URL = 'http://localhost:8080/experiencia/'
 
 
   constructor(public http : HttpClient) { }

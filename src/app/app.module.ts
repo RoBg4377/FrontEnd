@@ -30,6 +30,7 @@ import { EditarExperienciaComponent } from './componentes/experiencia/editar-exp
 import { FormProyectosComponent } from './modales/form-proyectos/form-proyectos.component';
 import { EditarProyectosComponent } from './componentes/proyectos/editar-proyectos.component';
 import { EditarPersonaComponent } from './componentes/persona/editar-persona.component';
+import { SpinerComponent } from './modales/spiner/spiner.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { EditarPersonaComponent } from './componentes/persona/editar-persona.com
     FormProyectosComponent,
     EditarProyectosComponent,
     EditarPersonaComponent,
+    SpinerComponent,
   ],
   imports: [
     BrowserModule,

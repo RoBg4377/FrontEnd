@@ -7,7 +7,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root',
 })
 export class EduacacionService {
-  URL = 'https://rbg-backend.onrender.com/educacion/';
+  URL = 'http://localhost:8080/educacion/';
 
   constructor(private http: HttpClient) {}
 

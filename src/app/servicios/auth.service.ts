@@ -10,7 +10,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 })
 export class AuthService {
 
-  authURL = 'https://rbg-backend.onrender.com/auth/';
+  authURL = 'http://localhost:8080/auth/';
 
   constructor(private http: HttpClient) { }
 
