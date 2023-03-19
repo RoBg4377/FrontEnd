@@ -4,9 +4,21 @@
   border-color: #df8bdd;
   font-family: 'Concert One', cursive;
   margin: 1vw;
+  font-size:xx-large;
 }
 .botones:hover{
   background-color: #1F1D36;
   color: #9fcc40;
   border-color:#9fcc40;
+}
+.cita{
+  background-color: #df8bdd;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  padding: 3rem;
+  color: #1f1d36;
+  border-radius: 30px;
+  border:#9fcc40 2px solid;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }

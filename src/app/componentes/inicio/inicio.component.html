@@ -7,9 +7,15 @@
         <div>
           <img class="logo" src="../../../assets/dist/MiLogo.png" alt="logo Rodrigo Benavides">
         </div>
-        <button type="button" class="btn botones" data-bs-toggle="modal" data-bs-target="#login">Iniciar Sesión</button>
-        <button type="button" class="btn botones" data-bs-toggle="modal" data-bs-target="#registro">Crear
+        <button type="button" class="btn botones" data-bs-toggle="modal" data-bs-target="#login" *ngIf="!isLogged">Iniciar Sesión</button>
+        <button type="button" class="btn botones" data-bs-toggle="modal" data-bs-target="#registro" *ngIf="!isLogged">Crear
           Cuenta</button>
+          <div class="cita" *ngIf="isLogged">
+            <p>"Todos queremos sentirnos relevantes, y pensar que estamos haciendo una diferencia en este mundo.
+            Tener un trabajo donde uno se siente productivo,
+          y saber que el trabajo que uno hace <b>' importa '</b> .“</p>
+            <cite>— Linus Torvalds</cite>
+          </div>
       </div>
       <div class="col-lg-6 col-sm-12 col-12 saludo " style="text-align: left;">
         <div *ngIf="isLogged; else loggedOut">
